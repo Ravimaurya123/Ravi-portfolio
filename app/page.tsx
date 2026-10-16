@@ -11,6 +11,29 @@ import {
   MapPin,
 } from "lucide-react";
 
+import {
+  FaJava,
+  FaJs,
+  FaReact,
+  FaHtml5,
+  FaCss3Alt,
+  FaNodeJs,
+  FaGitAlt,
+  FaGithub,
+} from "react-icons/fa";
+
+import {
+  SiTypescript,
+  SiNextdotjs,
+  SiTailwindcss,
+  SiExpress,
+  SiMongodb,
+  SiPostman,
+  SiVscodium,
+  SiLeetcode,
+} from "react-icons/si";
+
+
 export default function Home() {
   return (
     <>
@@ -264,6 +287,7 @@ export default function Home() {
 
 
 
+
         <section id="skills" className="skills-section">
           <div className="skills-container">
             <div className="skills-heading">
@@ -272,8 +296,8 @@ export default function Home() {
                 Skills &amp; <span>Technologies</span>
               </h2>
               <p>
-                Technologies I use to build applications and solve
-                programming problems.
+                Technologies and tools I use to build full-stack applications
+                and solve programming problems.
               </p>
             </div>
 
@@ -282,16 +306,22 @@ export default function Home() {
                 <div className="skill-card-heading">
                   <span className="skill-card-icon">&lt;/&gt;</span>
                   <div>
-                    <h3>Programming</h3>
-                    <p>Core programming concepts</p>
+                    <h3>Programming Languages</h3>
+                    <p>Programming and problem-solving</p>
                   </div>
                 </div>
-
                 <div className="skill-tags">
-                  <span>Java</span>
-                  <span>JavaScript</span>
+                  <span title="Java" aria-label="Java">
+  <FaJava aria-hidden="true" />
+  Java
+</span>
+                  <span title="JavaScript" aria-label="JavaScript">
+                    <FaJs aria-hidden="true" />
+                    JavaScript
+                  </span>
                   <span>C++</span>
-                  <span>OOP</span>
+                  <span>c</span>
+                  <span>Python</span>
                 </div>
               </article>
 
@@ -300,17 +330,37 @@ export default function Home() {
                   <span className="skill-card-icon">UI</span>
                   <div>
                     <h3>Frontend Development</h3>
-                    <p>Interactive user interfaces</p>
+                    <p>Responsive and interactive interfaces</p>
                   </div>
                 </div>
 
                 <div className="skill-tags">
-                  <span>HTML</span>
-                  <span>CSS</span>
-                  <span>React.js</span>
-                  <span>Next.js</span>
-                  <span>TypeScript</span>
+                  <span title="HTML5" aria-label="HTML5">
+                    <FaHtml5 aria-hidden="true" />
+                    HTML5
+                  </span>
+                  <span title="CSS3" aria-label="CSS3">
+                    <FaCss3Alt aria-hidden="true" />
+                    CSS3
+                  </span>
+                  <span title="React" aria-label="React">
+                    <FaReact aria-hidden="true" />
+                    React
+                  </span>
+                  <span title="Next.js" aria-label="Next.js">
+                    <SiNextdotjs aria-hidden="true" />
+                    Next.js
+                  </span>
+                  <span title="TypeScript" aria-label="TypeScript">
+                    <SiTypescript aria-hidden="true" />
+                    TypeScript
+                  </span>
+                  <span title="Tailwind CSS" aria-label="Tailwind CSS">
+                    <SiTailwindcss aria-hidden="true" />
+                    Tailwind CSS
+                  </span>
                 </div>
+
               </article>
 
               <article className="skill-card">
@@ -318,33 +368,33 @@ export default function Home() {
                   <span className="skill-card-icon">{ }</span>
                   <div>
                     <h3>Backend Development</h3>
-                    <p>Server-side application development</p>
+                    <p>Server-side logic and APIs</p>
                   </div>
                 </div>
 
                 <div className="skill-tags">
-                  <span>Node.js</span>
-                  <span>Express.js</span>
+                  <span><FaNodeJs /></span>
+                  <span><SiExpress /></span>
                   <span>REST APIs</span>
-                  <span>JWT</span>
+                  <span>JWT Authentication</span>
                 </div>
+
               </article>
 
               <article className="skill-card">
                 <div className="skill-card-heading">
                   <span className="skill-card-icon">DB</span>
                   <div>
-                    <h3>Database &amp; Tools</h3>
-                    <p>Data management and development workflow</p>
+                    <h3>Database Management</h3>
+                    <p>Storing and managing application data</p>
                   </div>
                 </div>
 
                 <div className="skill-tags">
-                  <span>MongoDB</span>
-                  <span>Git</span>
-                  <span>GitHub</span>
-                  <span>VS Code</span>
+                  <span><SiMongodb /></span>
+                  <span>DBMS</span>
                 </div>
+
               </article>
 
               <article className="skill-card">
@@ -352,15 +402,14 @@ export default function Home() {
                   <span className="skill-card-icon">DSA</span>
                   <div>
                     <h3>Computer Science</h3>
-                    <p>Problem-solving fundamentals</p>
+                    <p>Core concepts and coding practice</p>
                   </div>
                 </div>
-
                 <div className="skill-tags">
                   <span>Data Structures</span>
                   <span>Algorithms</span>
-                  <span>DBMS</span>
                   <span>OOP</span>
+                  <span>Problem Solving</span>
                 </div>
               </article>
 
@@ -368,22 +417,24 @@ export default function Home() {
                 <div className="skill-card-heading">
                   <span className="skill-card-icon">DEV</span>
                   <div>
-                    <h3>Development Practices</h3>
-                    <p>Building and testing applications</p>
+                    <h3>Tools &amp; Practices</h3>
+                    <p>Development workflow and maintenance</p>
                   </div>
                 </div>
 
                 <div className="skill-tags">
+                  <span><FaGitAlt /></span>
+                  <span><FaGithub /></span>
                   <span>API Integration</span>
-                  <span>Responsive Design</span>
                   <span>Debugging</span>
                   <span>Deployment</span>
                 </div>
+
               </article>
             </div>
 
             <p className="skills-note">
-              Focused on continuous learning and building real-world
+              Continuously learning and applying my skills through real-world
               full-stack projects.
             </p>
           </div>
@@ -445,12 +496,16 @@ export default function Home() {
                       View Repository <span>↗</span>
                     </a>
 
+
                     <a
                       className="project-demo-btn"
-                      href="#contact"
+                      href="https://rescue-net-for-disaster-management.vercel.app"
+                      target="_blank"
+                      rel="noopener noreferrer"
                     >
                       Live Demo <span>↗</span>
                     </a>
+
                   </div>
 
                 </div>
@@ -485,14 +540,16 @@ export default function Home() {
                   </div>
 
                   <div className="project-actions">
+
                     <a
                       className="project-link"
-                      href="https://github.com/Ravimaurya123"
+                      href="https://github.com/Ravimaurya123/Smart-Ecommerce"
                       target="_blank"
-                      rel="noreferrer"
+                      rel="noopener noreferrer"
                     >
-                      Explore GitHub <span>↗</span>
+                      View Repository <span>↗</span>
                     </a>
+
 
                     <a className="project-demo-btn" href="#contact">
                       Live Demo <span>↗</span>
@@ -529,18 +586,20 @@ export default function Home() {
                   </div>
 
                   <div className="project-actions">
+
                     <a
                       className="project-link"
                       href="https://github.com/Ravimaurya123"
                       target="_blank"
-                      rel="noreferrer"
+                      rel="noopener noreferrer"
                     >
                       Explore GitHub <span>↗</span>
                     </a>
 
-                    <a className="project-demo-btn" href="#contact">
+
+                    {/* <a className="project-demo-btn" href="#contact">
                       Live Demo <span>↗</span>
-                    </a>
+                    </a> */}
                   </div>
                 </div>
               </article>
@@ -766,23 +825,23 @@ export default function Home() {
                 </a>
               </div>
 
-<div className="contact-details">
-  <a className="contact-detail-item" href="mailto:YOUR_EMAIL@gmail.com">
-    <span className="contact-detail-icon">✉</span>
-    <span>
-      <strong>Email</strong>
-      <small>YOUR_EMAIL@gmail.com</small>
-    </span>
-  </a>
+              <div className="contact-details">
+                <a className="contact-detail-item" href="mailto:YOUR_EMAIL@gmail.com">
+                  <span className="contact-detail-icon">✉</span>
+                  <span>
+                    <strong>Email</strong>
+                    <small>YOUR_EMAIL@gmail.com</small>
+                  </span>
+                </a>
 
-  <div className="contact-detail-item">
-    <span className="contact-detail-icon">⌖</span>
-    <span>
-      <strong>Location</strong>
-      <small>Punjab, India</small>
-    </span>
-  </div>
-</div>
+                <div className="contact-detail-item">
+                  <span className="contact-detail-icon">⌖</span>
+                  <span>
+                    <strong>Location</strong>
+                    <small>Punjab, India</small>
+                  </span>
+                </div>
+              </div>
 
             </div>
 

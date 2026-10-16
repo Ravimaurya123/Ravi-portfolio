@@ -2256,3 +2256,127 @@ a.contact-detail-item:hover {
     object-position: center top;
   }
 }
+
+
+/* Skill tags with technology logos */
+.skill-tags span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+}
+
+.skill-tags span svg {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+
+
+/* Accessible skill tags */
+.skill-tags span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  cursor: default;
+  transition:
+    border-color 0.2s ease,
+    background 0.2s ease,
+    transform 0.2s ease;
+}
+
+.skill-tags span:hover {
+  border-color: var(--accent);
+  background: var(--surface);
+  transform: translateY(-2px);
+}
+
+.skill-tags span svg {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+
+@media (max-width: 680px) {
+  .skill-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .skill-tags span {
+    max-width: 100%;
+    padding: 9px 11px;
+    font-size: 13px;
+    line-height: 1.4;
+  }
+
+  .skill-tags span svg {
+    width: 17px;
+    height: 17px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .skill-tags span {
+    transition: none;
+  }
+
+  .skill-tags span:hover {
+    transform: none;
+  }
+}
+.skill-tags span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  cursor: default;
+  transition:
+    border-color 0.2s ease,
+    background 0.2s ease,
+    transform 0.2s ease;
+}
+
+.skill-tags span:hover {
+  border-color: var(--accent);
+  background: var(--surface);
+  transform: translateY(-2px);
+}
+
+.skill-tags span svg {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+
+@media (max-width: 680px) {
+  .skill-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .skill-tags span {
+    max-width: 100%;
+    padding: 9px 11px;
+    font-size: 13px;
+    line-height: 1.4;
+  }
+
+  .skill-tags span svg {
+    width: 17px;
+    height: 17px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .skill-tags span {
+    transition: none;
+  }
+
+  .skill-tags span:hover {
+    transform: none;
+  }
+}
