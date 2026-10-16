@@ -14,10 +14,24 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Ravikant Singh | Developer Portfolio",
-  description: "Full Stack Web Developer Portfolio",
+  title: "Ravikant Singh | Full Stack Web Developer",
+  description:
+    "Explore the portfolio of Ravikant Singh, a B.Tech CSE student at Lovely Professional University. Discover full-stack web development projects, React, Next.js, Node.js, MongoDB, and programming skills.",
+  applicationName: "Ravikant Singh Portfolio",
+  keywords: [
+    "Ravikant Singh",
+    "Ravikant Singh Portfolio",
+    "Full Stack Web Developer",
+    "Next.js Developer",
+    "React Developer",
+    "Node.js",
+    "MongoDB",
+    "B.Tech CSE",
+    "Lovely Professional University",
+  ],
+  authors: [{ name: "Ravikant Singh" }],
+  creator: "Ravikant Singh",
 };
-
 export default function RootLayout({
   children,
 }: Readonly<{

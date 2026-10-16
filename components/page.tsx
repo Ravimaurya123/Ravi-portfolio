@@ -4,6 +4,8 @@ import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import ContactForm from "@/components/ContactForm";
 import Footer from "@/components/Footer";
+import GitHubContributions from "@/components/GitHubContributions";
+import LeetCodeStats from "@/components/LeetCodeStats";
 import {
   ArrowDown,
   ArrowUpRight,
@@ -312,9 +314,9 @@ export default function Home() {
                 </div>
                 <div className="skill-tags">
                   <span title="Java" aria-label="Java">
-  <FaJava aria-hidden="true" />
-  Java
-</span>
+                    <FaJava aria-hidden="true" />
+                    Java
+                  </span>
                   <span title="JavaScript" aria-label="JavaScript">
                     <FaJs aria-hidden="true" />
                     JavaScript
@@ -775,6 +777,30 @@ export default function Home() {
           </div>
 
         </section>
+
+
+        <section
+          id="contributions"
+          className="section contributions-section"
+        >
+          <div className="section-heading">
+            <p className="section-eyebrow">BUILDING EVERY DAY</p>
+
+            <h2>
+              Contribution <span>Graph</span>
+            </h2>
+
+            {/* <p>
+              Every contribution represents a step forward in my
+              journey as a developer.
+            </p> */}
+          </div>
+
+          <div className="contributions-card">
+            <GitHubContributions />
+          </div>
+        </section>
+
 
         <section id="contact" className="contact-section section">
           <div className="section-heading">
