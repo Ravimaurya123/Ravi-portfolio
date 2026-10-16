@@ -2,7 +2,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { GitHubCalendar } from "react-github-calendar";
+import GitHubCalendarClient from "./GitHubCalendarClient";
 
 type ContributionDay = {
   date: string;
@@ -57,7 +57,10 @@ export default function GitHubContributions() {
 
         setStats(data);
       } catch (err) {
-        if (err instanceof Error && err.name === "AbortError") {
+        if (
+          err instanceof Error &&
+          err.name === "AbortError"
+        ) {
           return;
         }
 
@@ -104,7 +107,6 @@ export default function GitHubContributions() {
       <div className="github-dashboard-header">
         <div>
           <h3>GitHub Activity</h3>
-          {/* <p>@Ravimaurya123</p> */}
         </div>
 
         <select
@@ -131,7 +133,9 @@ export default function GitHubContributions() {
                 ? "Loading..."
                 : error
                   ? "—"
-                  : `${item.value ?? 0}${item.suffix ? ` ${item.suffix}` : ""}`}
+                  : `${item.value ?? 0}${
+                      item.suffix ? ` ${item.suffix}` : ""
+                    }`}
             </strong>
           </div>
         ))}
@@ -145,14 +149,9 @@ export default function GitHubContributions() {
 
       {!error && (
         <div className="github-calendar">
-          <GitHubCalendar
+          <GitHubCalendarClient
             key={selectedYear}
-            username="Ravimaurya123"
             year={selectedYear}
-            colorScheme="dark"
-            blockSize={12}
-            blockMargin={4}
-            fontSize={12}
           />
         </div>
       )}
@@ -160,10 +159,10 @@ export default function GitHubContributions() {
       <a
         href="https://github.com/Ravimaurya123"
         target="_blank"
-        rel="noreferrer"
+        rel="noopener noreferrer"
         className="contributions-link"
       >
-        View!
+        View GitHub Profile ↗
       </a>
     </div>
   );

@@ -1,4 +1,5 @@
-
+"use client";
+import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import Navbar from "@/components/Navbar";
@@ -37,6 +38,7 @@ import {
 
 
 export default function Home() {
+  const [activeCodingTab, setActiveCodingTab] = useState<"github" | "leetcode">("github");
   return (
     <>
       <Navbar />
@@ -779,27 +781,64 @@ export default function Home() {
         </section>
 
 
+
+
         <section
           id="contributions"
           className="section contributions-section"
         >
           <div className="section-heading">
             <p className="section-eyebrow">BUILDING EVERY DAY</p>
-
             <h2>
-              Contribution <span>Graph</span>
+              Coding <span>Activity</span>
             </h2>
-
-            {/* <p>
-              Every contribution represents a step forward in my
-              journey as a developer.
-            </p> */}
+            <p>
+              Track my coding journey across GitHub and LeetCode.
+            </p>
           </div>
 
-          <div className="contributions-card">
-            <GitHubContributions />
+          <div className="coding-tabs" role="tablist">
+            <button
+              type="button"
+              role="tab"
+              aria-selected={activeCodingTab === "github"}
+              className={`coding-tab ${activeCodingTab === "github" ? "active" : ""
+                }`}
+              onClick={() => setActiveCodingTab("github")}
+            >
+              GitHub
+            </button>
+
+            <button
+              type="button"
+              role="tab"
+              aria-selected={activeCodingTab === "leetcode"}
+              className={`coding-tab ${activeCodingTab === "leetcode" ? "active" : ""
+                }`}
+              onClick={() => setActiveCodingTab("leetcode")}
+            >
+              LeetCode
+            </button>
           </div>
+
+          {activeCodingTab === "github" ? (
+            <div
+              role="tabpanel"
+              className="contributions-card"
+            >
+              <GitHubContributions />
+            </div>
+          ) : (
+            <div
+              role="tabpanel"
+              className="contributions-card"
+            >
+              <LeetCodeStats />
+            </div>
+          )}
         </section>
+
+
 
 
         <section id="contact" className="contact-section section">
