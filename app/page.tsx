@@ -833,7 +833,7 @@ export default function Home() {
                     <strong>GitHub</strong>
                     <small>Explore my projects</small>
                   </span>
-                  <span className="contact-social-arrow">↗</span>
+                  <span className="contact-social-arrow"></span>
                 </a>
 
                 <a
@@ -847,7 +847,7 @@ export default function Home() {
                     <strong>LinkedIn</strong>
                     <small>Let's connect professionally</small>
                   </span>
-                  <span className="contact-social-arrow">↗</span>
+                  <span className="contact-social-arrow"></span>
                 </a>
               </div>
 
@@ -856,7 +856,7 @@ export default function Home() {
                   <span className="contact-detail-icon">✉</span>
                   <span>
                     <strong>Email</strong>
-                    <small>YOUR_EMAIL@gmail.com</small>
+                    <small>ravikantsingh08032007@gmail.com</small>
                   </span>
                 </a>
 
