@@ -434,14 +434,25 @@ export default function Home() {
                     <span>Leaflet.js</span>
                   </div>
 
-                  <a
-                    className="project-link"
-                    href="https://github.com/Ravimaurya123/RescueNet-for-Disaster-Management"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    View Repository <span>↗</span>
-                  </a>
+
+                  <div className="project-actions">
+                    <a
+                      className="project-link"
+                      href="https://github.com/Ravimaurya123/RescueNet-for-Disaster-Management"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      View Repository <span>↗</span>
+                    </a>
+
+                    <a
+                      className="project-demo-btn"
+                      href="#contact"
+                    >
+                      Live Demo <span>↗</span>
+                    </a>
+                  </div>
+
                 </div>
               </article>
 
@@ -473,14 +484,20 @@ export default function Home() {
                     <span>JWT</span>
                   </div>
 
-                  <a
-                    className="project-link"
-                    href="https://github.com/Ravimaurya123"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Explore GitHub <span>↗</span>
-                  </a>
+                  <div className="project-actions">
+                    <a
+                      className="project-link"
+                      href="https://github.com/Ravimaurya123"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Explore GitHub <span>↗</span>
+                    </a>
+
+                    <a className="project-demo-btn" href="#contact">
+                      Live Demo <span>↗</span>
+                    </a>
+                  </div>
                 </div>
               </article>
 
@@ -511,14 +528,20 @@ export default function Home() {
                     <span>REST APIs</span>
                   </div>
 
-                  <a
-                    className="project-link"
-                    href="https://github.com/Ravimaurya123"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Explore GitHub <span>↗</span>
-                  </a>
+                  <div className="project-actions">
+                    <a
+                      className="project-link"
+                      href="https://github.com/Ravimaurya123"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Explore GitHub <span>↗</span>
+                    </a>
+
+                    <a className="project-demo-btn" href="#contact">
+                      Live Demo <span>↗</span>
+                    </a>
+                  </div>
                 </div>
               </article>
             </div>
@@ -600,13 +623,98 @@ export default function Home() {
           </div>
 
           <div className="certification-note">
-            <h3>Certifications</h3>
-
-            <p>
-              Add your completed certifications here with their actual
-              certificate names and verification links.
+            <h3>Certifications & Achievements</h3>
+            <p className="certification-subtitle">
+              Courses and certifications completed to strengthen my technical and professional skills.
             </p>
+
+            <div className="certification-grid">
+              <div className="certification-card">
+                <div className="certification-icon">📘</div>
+                <h4>Fundamentals of DSA</h4>
+                <p>Data Structures and Algorithms</p>
+                <span>Technical</span>
+
+                <a
+                  href="/certificates/fundamentals-of-dsa.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="view-certificate-btn"
+                >
+                  View Certificate ↗
+                </a>
+
+              </div>
+
+              <div className="certification-card">
+                <div className="certification-icon">💻</div>
+                <h4>Computer Programming in C</h4>
+                <p>Programming Fundamentals</p>
+                <span>Programming</span>
+
+                <a
+                  href="/certificates/fundamentals-of-dsa.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="view-certificate-btn"
+                >
+                  View Certificate ↗
+                </a>
+
+              </div>
+
+              <div className="certification-card">
+                <div className="certification-icon">⚛️</div>
+                <h4>React.js</h4>
+                <p>Frontend Web Development</p>
+                <span>Web Development</span>
+
+                <a
+                  href="/certificates/fundamentals-of-dsa.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="view-certificate-btn"
+                >
+                  View Certificate ↗
+                </a>
+
+              </div>
+
+              <div className="certification-card">
+                <div className="certification-icon">🧠</div>
+                <h4>Introduction to DSA</h4>
+                <p>Data Structures and Algorithms Basics</p>
+                <span>Technical</span>
+                <a
+                  href="/certificates/fundamentals-of-dsa.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="view-certificate-btn"
+                >
+                  View Certificate ↗
+                </a>
+
+              </div>
+
+              <div className="certification-card">
+                <div className="certification-icon">⏱️</div>
+                <h4>Effective Time Management</h4>
+                <p>Productivity and Time Management</p>
+                <span>Professional Skills</span>
+
+                <a
+                  href="/certificates/fundamentals-of-dsa.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="view-certificate-btn"
+                >
+                  View Certificate ↗
+                </a>
+
+              </div>
+            </div>
           </div>
+
         </section>
 
         <section id="contact" className="contact-section section">
@@ -627,19 +735,55 @@ export default function Home() {
                 Have an opportunity or project in mind? Feel free to contact me.
               </p>
 
-              <a href="https://github.com/Ravimaurya123" target="_blank" rel="noreferrer">
-                GitHub
-              </a>
 
-              <br />
+              <div className="contact-socials">
+                <a
+                  href="https://github.com/Ravimaurya123"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="contact-social-link"
+                >
+                  <span className="contact-social-icon">GH</span>
+                  <span className="contact-social-text">
+                    <strong>GitHub</strong>
+                    <small>Explore my projects</small>
+                  </span>
+                  <span className="contact-social-arrow">↗</span>
+                </a>
 
-              <a
-                href="https://www.linkedin.com/in/ravi-kant-singh-a039ab321/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                LinkedIn
-              </a>
+                <a
+                  href="https://www.linkedin.com/in/ravi-kant-singh-a039ab321/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="contact-social-link"
+                >
+                  <span className="contact-social-icon">in</span>
+                  <span className="contact-social-text">
+                    <strong>LinkedIn</strong>
+                    <small>Let's connect professionally</small>
+                  </span>
+                  <span className="contact-social-arrow">↗</span>
+                </a>
+              </div>
+
+<div className="contact-details">
+  <a className="contact-detail-item" href="mailto:YOUR_EMAIL@gmail.com">
+    <span className="contact-detail-icon">✉</span>
+    <span>
+      <strong>Email</strong>
+      <small>YOUR_EMAIL@gmail.com</small>
+    </span>
+  </a>
+
+  <div className="contact-detail-item">
+    <span className="contact-detail-icon">⌖</span>
+    <span>
+      <strong>Location</strong>
+      <small>Punjab, India</small>
+    </span>
+  </div>
+</div>
+
             </div>
 
             <ContactForm />
